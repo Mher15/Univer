@@ -1,0 +1,161 @@
+.amezing {
+  background-color: #2530c9;
+  height: 44rem;
+  padding: 0;
+  @media screen and (max-width: 500px) {
+    height: 90rem;
+  }
+  .mobAmezing {
+    @media screen and (max-width: 500px) {
+      align-items: flex-start !important;
+      padding-top: 5rem;
+    }
+
+    .colabout {
+      color: #fff;
+      padding-left: 5rem;
+      @media screen and (max-width: 500px) {
+        padding-left: 0.5rem;
+        text-align: center;
+      }
+      p {
+        width: 80%;
+        font-size: 0.8rem;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      button {
+        background-color: #f49ea8;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin: 34px auto 0 0;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease;
+        border: 1px solid #f49ea8;
+        border-radius: 4rem;
+        &:hover {
+          background-color: transparent;
+          color: #f49ea8;
+        }
+      }
+    }
+
+    .card_section {
+      display: flex;
+      align-items: center;
+      position: relative;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+      .cardleaft {
+        position: absolute;
+        top: -15rem;
+        left: 0;
+        width: 50%;
+        padding: 0.7rem;
+        @media screen and (max-width: 500px) {
+          position: static;
+          width: 100%;
+          padding: 0;
+        }
+        .cardd {
+          width: 100%;
+          height: 100%;
+          padding: 2rem;
+          background: #fff;
+          margin: 1.3rem;
+          @media screen and (max-width: 500px) {
+            margin: 0;
+            margin-top: 2rem;
+          }
+          .card_img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f49ea8;
+            svg {
+              width: 1.5rem;
+              height: 1.5rem;
+              color: #fff;
+            }
+          }
+
+          h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            font-size: 0.7rem;
+            color: #808080;
+            font-style: italic;
+          }
+        }
+        .cardd:last-child {
+          .card_img {
+            background-color: #fd5ec7;
+          }
+        }
+      }
+      .cardright {
+        position: absolute;
+        top: -21rem;
+        right: 0;
+        width: 50%;
+        padding: 0.7rem;
+        @media screen and (max-width: 500px) {
+          position: static;
+          width: 100%;
+          padding: 0;
+
+        }
+        .cardd {
+          width: 100%;
+          height: 100%;
+          padding: 2rem;
+          background: #fff;
+          margin: 1.3rem;
+          @media screen and (max-width: 500px) {
+            margin: 0;
+            margin-top: 2rem;
+          }
+          .card_img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6f78f1;
+            svg {
+              width: 1.5rem;
+              height: 1.5rem;
+              color: #fff;
+            }
+          }
+          h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            font-size: 0.7rem;
+            color: #808080;
+            font-style: italic;
+          }
+        }
+        .cardd:last-child {
+          .card_img {
+            background-color: #5ca4fb;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.navBar {
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  nav {
+    .modalOpen {
+      width: 0.5rem;
+      height: 0.5rem;
+      cursor: pointer;
+      .line {
+        position: relative;
+        width: 1rem;
+        height: 0.1rem;
+        background-color: #000;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -0.3rem;
+          width: 1rem;
+          height: 0.1rem;
+          background-color: #000;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0.3rem;
+          width: 1rem;
+          height: 0.1rem;
+          background-color: #000;
+        }
+      }
+    }
+    .logo_section{
+      width: 10rem;
+        height: 4rem;
+      .logo{
+        width: 100%;
+          height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .modal_menu {
+    width: 100%;
+    height: 44rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    z-index: 10;
+    @media screen and(max-width:500px) {
+      height: 50rem;
+  }
+    .menu {
+      width: 20rem;
+      height: 100%;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      .cloas_modal {
+        position: relative;
+        top: 2rem;
+        height: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &::after {
+          content: "";
+          position: absolute;
+          right: 1rem;
+          width: 2rem;
+          height: 0.1rem;
+          transform: rotate(45deg);
+          background-color: #fff;
+          
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          right: 1rem;
+          width: 2rem;
+          height: 0.1rem;
+          transform: rotate(-45deg);
+          background-color: #fff;
+        }
+      }
+      .menu_list {
+        margin-top: 5rem;
+        ul {
+          padding: 0;
+          li {
+            list-style-type: none;
+            text-align: center;
+            margin: 0.2rem 0;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 1.2rem;
+              transition: all 0.3s ease;
+              &:hover {
+                color: rgb(187, 187, 187);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

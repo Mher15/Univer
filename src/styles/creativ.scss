@@ -1,0 +1,96 @@
+.creativ {
+  background-color: #f9c9ce;
+  height: 44rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  
+  .img_left {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: 10%;
+    left: 10%;
+    background: linear-gradient(rgb(255, 255, 255) 30%, #f9c9ce 30%);
+    background-size: 100% 1.9rem;
+    border-radius: 50%;
+    transform: rotate(135deg);
+    @media screen and(max-width:500px) {
+     left: -3rem;
+     top: 1rem;
+  }
+  }
+  .thiking {
+    height: 27rem;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    @media screen and(max-width:500px) {
+      height: 31rem;
+    }
+    .creativeCol{
+        padding: 7rem 5rem 0 3rem;
+        @media screen and(max-width:500px) {
+            padding: 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        h1{
+            color :#2530c9;
+        }
+        P{
+            font-size: .8rem;
+            @media screen and(max-width:500px) {
+              padding: 0 .5rem 0 .5rem;
+            }
+        }
+        button {
+            background-color: #f49ea8;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin: 34px auto 0 0;
+            padding: .5rem 2rem;
+            transition: all .3s ease;
+            border: 1px solid #f49ea8;
+            border-radius: 4rem;
+            @media screen and(max-width:500px) {
+              margin-top: 0;
+            }
+            &:hover{
+                background-color: transparent;
+                color: #f49ea8;
+            }
+          }
+    }
+  }
+  .img_right {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    bottom: 12%;
+    right: 10%;
+    border: 2rem solid #2530c9;
+    border-radius: 50%;
+    @media screen and(max-width:500px) {
+      bottom: 7%;
+      right: 0;
+   }
+    .wave{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            bottom: -60%;
+            left: -70%;
+        }
+    }
+  }
+}
